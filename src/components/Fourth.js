@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import FourthBoxes from "./FourthBoxes";
 
 const Fourth = () => {
   return (
@@ -12,6 +13,12 @@ const Fourth = () => {
             Choose the highest level you feel confident in - you can always
             adjust later.
           </p>
+          <div className="cards flex justify-between m-20">
+            <FourthBoxes content="Introductory" heading="5X1/2"></FourthBoxes>
+            <FourthBoxes content="Foundational" heading="3x+5=4"></FourthBoxes>
+            <FourthBoxes content="Intermediate" heading="5X1/2"></FourthBoxes>
+            <FourthBoxes content="Calculus" heading="5X1/2"></FourthBoxes>
+          </div>
         </div>
       </div>
       <Link to="/fifth">
