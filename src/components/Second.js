@@ -1,23 +1,64 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import MainComponentSecond from "./MainComponentSecond";
 
 const Second = (props) => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
   return (
     <div className="second">
       <MainComponentSecond />
-      <div className="Options flex items-center w-50 m-20 p-3 justify-center border-4 border-gray">
+      <div
+        className={`border ${
+          isClicked
+            ? "border-yellow-600 border-10 border-solid shadow-slate-700"
+            : "border-gray-400"
+        } Options flex items-center h-30 w-50 m-20 p-3 justify-center border-6 border-gray p-4`}
+        onClick={handleClick}
+      >
         <h1>Learning specific skills to advance my career</h1>
       </div>
-      <div className="Options flex items-center w-50 m-20 p-3 justify-center border-4 border-gray">
+      <div
+        className={`border ${
+          isClicked
+            ? "border-yellow-600 border-10 border-solid shadow-slate-700"
+            : "border-gray-400"
+        } Options flex items-center h-30 w-50 m-20 p-3 justify-center border-6 border-gray p-4`}
+        onClick={handleClick}
+      >
         <h1>Exploring new topics I'm interested in</h1>
       </div>
-      <div className="Options flex items-center w-50 m-20 p-3 justify-center border-4 border-gray">
+      <div
+        className={`border ${
+          isClicked
+            ? "border-yellow-600 border-10 border-solid shadow-slate-700"
+            : "border-gray-400"
+        } Options flex items-center h-30 w-50 m-20 p-3 justify-center border-6 border-gray p-4`}
+        onClick={handleClick}
+      >
         <h1>Refreshing my math foundations</h1>
       </div>
-      <div className="Options flex items-center w-50 m-20 p-3 justify-center border-4 border-gray">
+      <div
+        className={`border ${
+          isClicked
+            ? "border-yellow-600 border-10 border-solid shadow-slate-700"
+            : "border-gray-400"
+        } Options flex items-center h-30 w-50 m-20 p-3 justify-center border-6 border-gray p-4`}
+        onClick={handleClick}
+      >
         <h1>Exercising my brain to stay sharp</h1>
       </div>
-      <div className="Options flex items-center w-50 m-20 p-3 justify-center border-4 border-gray">
+      <div
+        className={`border ${
+          isClicked
+            ? "border-yellow-600 border-10 border-solid shadow-slate-700"
+            : "border-gray-400"
+        } Options flex items-center h-30 w-50 m-20 p-3 justify-center border-6 border-gray p-4`}
+        onClick={handleClick}
+      >
         <h1>Something else !</h1>
       </div>
       <Link to="/third">

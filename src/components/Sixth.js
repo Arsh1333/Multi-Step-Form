@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import FourthBoxes from "./FourthBoxes";
+import FourthBox from "./FourthBoxes";
 
 const Sixth = () => {
   return (
@@ -13,8 +12,30 @@ const Sixth = () => {
             Choose one to get started , You can switch anytime
           </p>
           <div className="cards flex justify-between m-20">
-            <FourthBoxes content="Introductory" heading="5X1/2"></FourthBoxes>
-            <FourthBoxes content="Foundational" heading="3x+5=4"></FourthBoxes>
+            <div className="fourth-box mt-20 h-[200px] pb-0 border-2 border-gray-400 p-5">
+              <div className="box">
+                <div className="heading">
+                  <h1>Foundational Math</h1>
+                </div>
+                <div className="box-content">
+                  Build your foundational skills in algebra, geometry, and
+                  probability
+                </div>
+              </div>
+            </div>
+            <div className="cards flex justify-between m-20">
+              <div className="fourth-box h-[200px] border-2 border-gray-400 p-5">
+                <div className="box">
+                  <div className="heading">
+                    <h1>Mathematical Thinking</h1>
+                  </div>
+                  <div className="box-content">
+                    Build your foundational skills in algebra, geometry, and
+                    probability
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

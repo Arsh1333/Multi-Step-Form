@@ -1,6 +1,7 @@
 import Options from "./Options";
 import MainComponent from "./MainComponent";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const First = () => {
   const iconUrlOne =
@@ -8,6 +9,7 @@ const First = () => {
   return (
     <div className="first">
       <MainComponent />
+
       <Options description="Student or soon to be enrolled" icon={iconUrlOne} />
       <Options description="Professional pursuing a career" icon={iconUrlOne} />
       <Options description="Parent of a school-age child" icon={iconUrlOne} />
