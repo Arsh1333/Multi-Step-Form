@@ -18,7 +18,7 @@ const First = () => {
       <Options description="Other" icon={iconUrlOne} />
       <Link to="/second">
         {" "}
-        <button className=" md:ml-[600px] ml-[170px] p-3 w-30 rounded-md bg-blue-100">
+        <button className=" md:ml-[600px]  ml-[200px] p-3 w-30 rounded-md bg-blue-100">
           Continue
         </button>
       </Link>

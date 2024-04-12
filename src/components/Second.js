@@ -9,11 +9,17 @@ const Second = (props) => {
   return (
     <div className="second">
       <MainComponentSecond />
-      <Options description="Student or soon to be enrolled" icon={iconUrlOne} />
-      <Options description="Professional pursuing a career" icon={iconUrlOne} />
-      <Options description="Parent of a school-age child" icon={iconUrlOne} />
-      <Options description="Lifelong Learner" icon={iconUrlOne} />
-      <Options description="Teacher" icon={iconUrlOne} />
+      <Options description="Learning specific skill" icon={iconUrlOne} />
+      <Options
+        description="Exploring new topics I am intrested in "
+        icon={iconUrlOne}
+      />
+      <Options description="Refreshing my math foundations" icon={iconUrlOne} />
+      <Options
+        description="Exercising my brain to stay sharp"
+        icon={iconUrlOne}
+      />
+
       <Options description="Other" icon={iconUrlOne} />
       <Link to="/third">
         {" "}

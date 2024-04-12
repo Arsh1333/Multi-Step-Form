@@ -13,10 +13,10 @@ const FourthBoxes = (props) => {
         isClicked
           ? "border-yellow-600 border-10 border-solid shadow-slate-700"
           : "border-gray-400"
-      } fourth-box border-2 border-gray-400 p-5`}
+      } fourth-box  border-2 border-gray-400 p-5`}
       onClick={handleClick}
     >
-      <div className="box">
+      <div className="box ml-10">
         <div className="heading">{props.heading}</div>
         <div className="box-content">{props.content}</div>
       </div>
